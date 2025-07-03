@@ -1,0 +1,229 @@
+.mob{
+    display: none;
+}
+header{
+    width: auto;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    font-size: var(--button);
+    font-weight: 600;
+    padding: var(--space-x-small) 3rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    filter: drop-shadow(0 4px 4px #cccccc53);
+}
+.lnb{
+    display: flex;
+    gap: var(--space-normal);
+}
+.lnb>li:hover{
+    color: var(--main-color);
+}
+.util{
+    display: flex;
+    gap: var(--space-x-small);
+}
+.util img{
+    height: 1.6rem;
+}
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.hidden_menu{
+    padding-top: 2rem;
+    box-sizing: border-box;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: all 0.6 ease 0x;
+}
+.hidden_menu.on{
+    transform: translateX(0%);
+}
+.hidden_top{
+    max-height: 70vh;
+    overflow: auto;
+}
+.gnb_wrap{
+    padding: 0 3rem;
+    padding-top: var(--space-large);
+}
+.gnb{
+    width: 50%;
+}
+.gnb>li{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.gnb>li>a{
+    width: 200px;
+    font-size: var(--heading3);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+.gnb ul{
+    border-left: 5px solid var(--main-color-400);
+    padding-left: var(--space-normal);
+    display: flex;
+    gap: var(--space-large);
+    flex-wrap: wrap;
+    align-items: center;
+}
+.gnb li:hover>a{
+    color: var(--main-color);
+}
+.btn_close{
+    position: absolute;
+    right: var(--space-normal);
+    top: var(--space-normal);
+}
+
+
+.lnb2{
+    display: flex;
+    gap: 3rem;
+    background-color: var(--main-color);
+    font-size: var(--heading3);
+    font-weight: 700;
+    padding: var(--space-normal) 3rem;
+    color: #fff;
+}
+.lnb2 a:hover{
+    text-decoration: underline;
+}
+.lnb3{
+    display: flex;
+    gap: 3rem;
+    background-color: #FFF1E9;
+    font-weight: 500;
+    padding: var(--space-normal) 3rem;
+}
+.lnb3 a:hover{
+    color: var(--main-color);
+}
+#btn_close_hidden_menu{
+    position: absolute;
+    right: 3rem;
+    top: 1rem;
+    cursor: pointer;
+    padding: 0.2rem;
+}
+#btn_close_hidden_menu img{
+    height: 2rem;
+}
+
+
+
+
+
+
+
+/* 태블릿 */
+@media(max-width:1024px){
+    .hidden_menu{
+        padding-top: 4rem;
+    }
+    header{
+        padding: var(--space-x-small) 2rem;
+        padding-top: 3rem;
+    }
+    .gnb{
+        width: auto;
+    }
+    .gnb_wrap{
+        padding: var(--space-large) 2rem;
+    }
+    .lnb2{
+        padding: var(--space-normal) 2rem;
+    }
+    
+    .lnb3{
+        padding: var(--space-normal) 2rem;
+    }
+    #btn_close_hidden_menu{
+        right: 2rem;
+    }
+
+}
+
+
+
+/* 모바일 */
+@media(max-width:768px){
+    .hidden_menu{
+        padding-top: 5rem;
+        border: 1ps solid red;
+    }
+    .gnb_wrap{
+        padding: var(--space-large) 1rem;
+    }
+    .lnb2{
+        padding: var(--space-normal) 1rem;
+    }
+    
+    .lnb3{
+        padding: var(--space-normal) 1rem;
+    }
+    .lnbWrap{
+        display: none;
+    }
+    header{
+        padding: var(--space-x-small) 1rem;
+    }
+    .logo{
+        position: static;
+        left: initial;
+        top: initial;
+        transform: translate(0%,0%);
+    }
+    .mob{
+        display: block;
+    }
+    .logo_mob{
+        padding: var(--space-x-small) 1rem;
+    }
+    .util_m_wrap{
+        background-color: var(--main-color-0);
+        padding: var(--space-small) 1rem;
+    }
+    .util_n{
+        display: flex;
+        gap: var(--space-normal);
+    }
+    .gnb>li{
+        flex-direction: column;
+        gap: var(--space-normal);
+    }
+    .gnb>li>a{
+        width: 20%;
+    }
+    .gnb ul{
+        padding-left: var(--space-normal);
+        gap: var(--space-normal);
+    }
+    #btn_close_hidden_menu{
+        right: 1rem;
+        top: 0.5rem;
+    }
+
+
+}

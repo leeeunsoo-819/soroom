@@ -1,0 +1,104 @@
+footer{
+    background-color: #000;
+    color: #fff;
+    margin-top: var(--space-xx-large);
+    padding: var(--space-large) 3rem var(--space-xx-large);
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--detail);
+    gap: 1rem;
+}
+.footerLeft{
+    flex-grow: 1;
+}
+.fmenu{
+    display: flex;
+    margin-bottom: var(--space-normal);
+    gap: var(--space-x-small) var(--space-normal);
+    flex-wrap: wrap;
+}
+.service{
+    display: flex;
+    gap: var(--space-x-small) var(--space-normal);
+    align-items: center;
+    margin-bottom: var(--space-x-large);
+    flex-wrap: wrap;
+}
+.service dd{
+    margin-right: var(--space-normal);
+}
+.service>dd:last-of-type{
+    margin-right: 0;
+}
+.cs{
+    display: flex;
+    gap: var(--space-x-small) var(--space-normal);
+    align-items: flex-end;
+    margin-bottom: var(--space-x-large);
+    flex-wrap: wrap;
+    font-size: var(--button);
+}
+.cs dt{
+    font-weight: 600;
+}
+.cs dd{
+    margin-right: var(--space-normal);
+    opacity: 0.6;
+}
+.cs .csNum{
+    font-size: var(--heading2);
+    font-weight: 700;
+    opacity: 1;
+}
+.cs>dd:last-of-type{
+    margin-right: 0;
+}
+.finfo{
+    display: flex;
+    gap: var(--space-x-small) var(--space-normal);
+    margin-bottom: var(--space-x-large);
+    flex-wrap: wrap;
+    font-size: var(--button);
+}
+.finfo dd{
+    margin-right: var(--space-normal);
+    opacity: 0.6;
+}
+.finfo dd:last-of-type{
+    margin-right: 0;
+}
+.flogo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: var(--space-small);
+}
+.sns{
+    display: flex;
+    gap: var(--space-small);
+    justify-content: flex-end;
+}
+
+
+@media (max-width:1400px) {
+   footer{
+        padding: var(--space-large) 2rem var(--space-xx-large);
+        flex-direction: column-reverse;
+    }
+    .footerRight{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: var(--space-large);
+    }
+    .flogo{
+        align-items: center;
+        margin-bottom: var(--space-large);
+    }
+}
+
+@media (max-width:768px) {
+    footer{
+        padding: var(--space-large) 1rem var(--space-xx-large);
+    }
+}

@@ -1,0 +1,47 @@
+/* 자주 사용되는 아이템들의 반응형 스타일 모음 */
+
+/* 버튼 */
+.btn_go{
+    background-color: var(--main-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem 1.3rem 0.3rem 1.6rem;
+    border-radius: 50px;
+    box-shadow: 4px 4px 4px #00000024;
+    gap: 0.5rem;
+    font-size: var(--button);
+    color: #fff;
+}
+.btn_go:active{
+    box-shadow: inset 4px 4px 4px #00000024;
+}
+.btn_go img{
+    height: 1.1rem;
+}
+.btn_go span{
+    white-space: nowrap;
+}
+.like{
+    display: flex;
+    align-items: center;
+    gap: var(--space-small);
+}
+.like svg{
+    height: 1.1rem;
+}
+.like.on svg{
+    fill: red;
+}
+.like.on svg path{
+    stroke: red;
+}
+
+
+@media (max-width:1400px) {
+    /* 화면너비 1400px 이하 */
+}
+@media (max-width:768px) {
+    /* 화면너비 768px 이하 */
+    
+}

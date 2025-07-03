@@ -1,0 +1,92 @@
+/* 공통적인 스타일 - 모든 html파일에서 연결 됨 */
+:root{
+    /* 사용할 변수 값 모음 */
+    --f-size-pc: 20px;
+    --f-size-tab: 18px;
+    --f-size-mob: 14px;
+    /* 여백설정 */
+    --space-x-small: 0.25rem;
+    --space-small: 0.5rem;
+    --space-normal: 1rem;
+    --space-large: 2rem;
+    --space-x-large: 4rem;
+    --space-xx-large: 6rem;
+
+    /* 색상 */
+    --main-color-0: #FBDCC9;
+    --main-color-400: #E8BEA4;
+    --main-color-700: #D19976;
+    --main-color: #C88A64;
+    --gray-color: #5D5D5D;
+    --gray2-color: #f0f0f0;
+
+    /* font size */
+    --heading1: 3rem;
+    --heading2: 1.4rem;
+    --heading3: 1.25rem;
+    --heading4: 1rem;
+    --body: 1rem;
+    --detail: 0.9rem;
+    --button: 0.8rem;
+
+    /* 좌우 반응형 여백 */
+    /* pc -> 3rem */
+    /* tab -> 2rem */
+    /* mob > 1rem */
+    /* --device-space : 3rem; */
+}
+
+
+
+html{
+    font-size: var(--f-size-pc);
+    font-family:Pretendard,sans-serif;
+}
+h1{
+    font-size: var(--heading1);
+}
+h2{
+    font-size: var(--heading2);
+}
+h3{
+    font-size: var(--heading3);
+}
+h4{
+    font-size: var(--heading4);
+}
+h5{
+    font-size: var(--heading5);
+}
+h6{
+    font-size: var(--heading6);
+}
+
+
+.commonFrame{
+    padding: 0 3rem;
+}
+
+em{
+    color: #ff0000;
+    font-style: inherit;
+}
+
+
+
+
+@media (max-width:1400px){
+    html{
+        font-size: var(--f-size-tab);
+    }
+    .commonFrame{
+        padding: 0 2rem;
+    }
+}
+@media (max-width:768px){
+    html{
+        font-size: var(--f-size-mob);
+    }
+    .commonFrame{
+        padding: 0 1rem;
+    }
+}
