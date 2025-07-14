@@ -651,7 +651,6 @@ main{
 .csNum a{
     font-size: var(--heading1);
     font-weight: 700;
-    margin-bottom: var(--space-large);
     display: block;
 }
 .csNum dl{
